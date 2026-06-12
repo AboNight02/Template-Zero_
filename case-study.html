@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+		content="Case study: How Leon Template One evolved from a beginner HTML/CSS template into a production-ready, accessible frontend system — a portfolio project by Ahmed Raed.">
+	<meta name="author" content="Ahmed Raed">
+	<meta name="theme-color" content="#3C3A47">
+	<meta name="robots" content="index, follow">
+
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Leon Template One — Before & After Case Study">
+	<meta property="og:description"
+		content="A documented frontend transformation: beginner template → production-ready landing page with modular CSS, accessibility, and lightweight JavaScript.">
+	<meta property="og:url" content="https://ahmedalmadhji.github.io/Template-Zero_/case-study.html">
+
+	<title>Case Study — Leon Template One | Ahmed Raed</title>
+
+	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700;900&display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/case-study.css">
+</head>
+
+<body>
+	<a href="#case-content" class="skip-link">Skip to case study content</a>
+
+	<nav class="site-nav" aria-label="Case study navigation">
+		<div class="container">
+			<a href="index.html" class="site-nav__logo" aria-label="Back to live project">
+				<img src="images/logo.svg" alt="" width="40" height="40">
+				<span class="site-nav__brand">Leon<span class="site-nav__brand-accent"> Template One</span></span>
+			</a>
+
+			<button class="site-nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu"
+				aria-label="Toggle navigation menu">
+				<span class="site-nav__toggle-bar"></span>
+				<span class="site-nav__toggle-bar"></span>
+				<span class="site-nav__toggle-bar"></span>
+			</button>
+
+			<ul class="site-nav__menu" id="nav-menu">
+				<li><a href="#evolution" class="nav-link">Evolution</a></li>
+				<li><a href="#engineering" class="nav-link">Engineering</a></li>
+				<li><a href="#learned" class="nav-link">Learned</a></li>
+				<li><a href="index.html" class="btn btn--primary btn--sm">View Live Demo</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<header class="case-hero">
+		<div class="container">
+			<p class="badge">Portfolio Case Study</p>
+			<h1>From beginner template to production-ready frontend</h1>
+			<p class="hero__subtitle">
+				A documented transformation of <strong>Leon Template One</strong> — showing how engineering
+				improvements, not redesign, turned a static HTML/CSS exercise into a recruiter-ready project.
+			</p>
+			<div class="case-hero__meta">
+				<span class="case-hero__tag">HTML · CSS · JavaScript</span>
+				<span class="case-hero__tag">Accessibility-first</span>
+				<span class="case-hero__tag">No frameworks</span>
+				<span class="case-hero__tag">By Ahmed Raed</span>
+			</div>
+		</div>
+	</header>
+
+	<main id="case-content">
+		<!-- Project Evolution -->
+		<section id="evolution" class="section--surface" aria-labelledby="evolution-heading">
+			<div class="container">
+				<header class="section-header">
+					<p class="section-intro">Project evolution</p>
+					<h2 id="evolution-heading">Before vs. after</h2>
+					<p>The same visual identity — a fundamentally different engineering foundation underneath.</p>
+				</header>
+
+				<div class="compare-grid">
+					<article class="compare-card compare-card--before">
+						<span class="compare-card__label">Before — Original</span>
+						<ul class="compare-list">
+							<li>Basic HTML structure with minimal semantics</li>
+							<li>Single monolithic CSS file</li>
+							<li>No JavaScript — fully static page</li>
+							<li>Missing or empty <code>href</code> attributes on links</li>
+							<li>No form validation or user feedback</li>
+							<li>Missing images and spelling errors in copy</li>
+							<li>No meta description, Open Graph, or SEO structure</li>
+							<li>No accessibility features (ARIA, skip link, focus states)</li>
+							<li>Basic responsive — mobile layout only as afterthought</li>
+						</ul>
+					</article>
+
+					<article class="compare-card compare-card--after">
+						<span class="compare-card__label">After — Upgraded</span>
+						<ul class="compare-list">
+							<li>Semantic HTML5 (<code>header</code>, <code>main</code>, <code>section</code>, <code>article</code>)</li>
+							<li>Modular CSS: <code>base.css</code> · <code>layout.css</code> · <code>components.css</code></li>
+							<li>Vanilla JS: nav toggle, smooth scroll, form validation, toasts</li>
+							<li>Meaningful links with <code>rel="noopener"</code> and ARIA labels</li>
+							<li>Client-side validation with loading states and error handling</li>
+							<li>Fixed assets, copy, and consistent heading hierarchy (single H1)</li>
+							<li>Full SEO: meta description, keywords, Open Graph, favicon</li>
+							<li>Skip link, keyboard navigation, <code>prefers-reduced-motion</code></li>
+							<li>Explicit mobile, tablet, and desktop breakpoints</li>
+						</ul>
+					</article>
+				</div>
+
+				<div class="compare-table-wrap">
+					<table class="compare-table">
+						<caption class="sr-only">Technical comparison before and after upgrade</caption>
+						<thead>
+							<tr>
+								<th scope="col">Area</th>
+								<th scope="col">Before</th>
+								<th scope="col">After</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>HTML</td>
+								<td>Basic structure, div-heavy</td>
+								<td class="col-after">Semantic + accessible markup</td>
+							</tr>
+							<tr>
+								<td>CSS</td>
+								<td>Single monolithic file</td>
+								<td class="col-after">Modular architecture + design tokens</td>
+							</tr>
+							<tr>
+								<td>JavaScript</td>
+								<td>None</td>
+								<td class="col-after">Lightweight, purposeful enhancements</td>
+							</tr>
+							<tr>
+								<td>SEO</td>
+								<td>Missing meta tags</td>
+								<td class="col-after">Description, OG tags, favicon</td>
+							</tr>
+							<tr>
+								<td>Accessibility</td>
+								<td>Not considered</td>
+								<td class="col-after">ARIA, skip link, focus-visible states</td>
+							</tr>
+							<tr>
+								<td>Responsive</td>
+								<td>One breakpoint</td>
+								<td class="col-after">Mobile · tablet · desktop grid system</td>
+							</tr>
+							<tr>
+								<td>UX</td>
+								<td>Static, no feedback</td>
+								<td class="col-after">Interactive nav, scroll states, toasts</td>
+							</tr>
+							<tr>
+								<td>Architecture</td>
+								<td>Beginner template</td>
+								<td class="col-after">Production-ready, maintainable system</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</section>
+
+		<!-- Engineering Thinking -->
+		<section id="engineering" aria-labelledby="engineering-heading">
+			<div class="container">
+				<header class="section-header">
+					<p class="section-intro">Engineering thinking</p>
+					<h2 id="engineering-heading">Why I upgraded it this way</h2>
+					<p>Every decision prioritized maintainability and user experience over complexity.</p>
+				</header>
+
+				<div class="thinking-grid">
+					<article class="thinking-card">
+						<div class="thinking-card__icon">
+							<img src="images/icon-layout.svg" alt="" width="40" height="40">
+						</div>
+						<h3>Layout preserved, foundation rebuilt</h3>
+						<p>The original design language (typography, colors, spacing rhythm) was kept intact.
+							Redesigning would hide the refactoring story — the goal was to prove I can improve
+							systems without breaking what already works.</p>
+					</article>
+
+					<article class="thinking-card">
+						<div class="thinking-card__icon">
+							<img src="images/icon-productivity.svg" alt="" width="40" height="40">
+						</div>
+						<h3>Minimal JavaScript by design</h3>
+						<p>No frameworks or build tools. Every script serves a clear purpose: navigation,
+							form validation, scroll behavior. If JavaScript fails, the page still works —
+							progressive enhancement, not dependency.</p>
+					</article>
+
+					<article class="thinking-card">
+						<div class="thinking-card__icon">
+							<img src="images/icon-ai.svg" alt="" width="40" height="40">
+						</div>
+						<h3>CSS refactored, not rewritten</h3>
+						<p>Instead of starting from scratch, I extracted design tokens, split concerns into
+							base/layout/components layers, and reused existing patterns. This mirrors real
+							legacy code improvement — incremental, testable, low-risk.</p>
+					</article>
+
+					<article class="thinking-card">
+						<div class="thinking-card__icon">
+							<img src="images/icon-collab.svg" alt="" width="40" height="40">
+						</div>
+						<h3>Accessibility-first approach</h3>
+						<p>Skip links, semantic landmarks, ARIA labels, and keyboard-friendly navigation were
+							added without altering the visual design. Accessibility is engineering, not decoration.</p>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<!-- What I Learned -->
+		<section id="learned" class="section--surface" aria-labelledby="learned-heading">
+			<div class="container">
+				<header class="section-header">
+					<p class="section-intro">What I learned</p>
+					<h2 id="learned-heading">From UI implementer to frontend engineer</h2>
+				</header>
+
+				<div class="learned-content">
+					<p>
+						This project marked a shift in how I approach frontend work. I started with a beginner
+						HTML/CSS template — the kind you build to learn syntax. The challenge wasn't building
+						something new; it was <strong>making an existing codebase better</strong>.
+					</p>
+					<p>
+						I learned that real frontend engineering means reading legacy code, identifying gaps
+						(accessibility, SEO, architecture), and improving them systematically — without
+						needlessly rewriting or redesigning.
+					</p>
+					<p>
+						Refactoring CSS into modular layers taught me how design tokens and separation of concerns
+						make future changes faster. Adding accessibility features showed me that inclusive design
+						doesn't require a visual overhaul — it requires intentional markup and testing.
+					</p>
+					<p>
+						The SaaS repositioning (ChairStudio AI) pushed me further: thinking about conversion,
+						content hierarchy, and user flows — not just code quality. A landing page is a product
+						surface, and frontend engineers build that surface.
+					</p>
+
+					<blockquote class="learned-highlight">
+						"The biggest lesson: production-ready doesn't mean complex. It means intentional —
+						every line of HTML, CSS, and JS should serve the user or the maintainer."
+					</blockquote>
+				</div>
+
+				<div class="case-cta">
+					<a href="index.html" class="btn btn--primary btn--lg">View Live Project</a>
+					<a href="https://github.com/AhmedAlMadhji" target="_blank" rel="noopener noreferrer"
+						class="btn btn--secondary btn--lg">GitHub Profile</a>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container">
+			<p class="site-footer__copy">
+				Case study for <strong>Leon Template One</strong> ·
+				<a href="index.html">Live demo</a> ·
+				Built by <a href="https://github.com/AhmedAlMadhji" target="_blank"
+					rel="noopener noreferrer">Ahmed Raed</a>
+			</p>
+		</div>
+	</footer>
+
+	<script src="js/toast.js"></script>
+	<script src="js/main.js" defer></script>
+</body>
+
+</html>
