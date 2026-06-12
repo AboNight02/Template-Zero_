@@ -2,8 +2,9 @@
 
 A high-conversion SaaS-style landing page for an AI-powered workspace design platform. Built with semantic HTML5, modular CSS, and vanilla JavaScript — no frameworks or build tools.
 
-**Live demo:** [https://ahmedalmadhji.github.io/Template-Zero_/](https://ahmedalmadhji.github.io/Template-Zero_/)
-
+**Live demo:** [https://ahmedalmadhji.github.io/ChairStudio-AI-SaaS-Landing-Page/
+](https://ahmedalmadhji.github.io/ChairStudio-AI-SaaS-Landing-Page/
+)
 ## Product Positioning
 
 Repositioned from a furniture showcase into **ChairStudio AI** — a smart workspace / interior design platform focused on:
