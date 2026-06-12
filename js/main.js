@@ -8,10 +8,9 @@
 
 	var SCROLL_THRESHOLD = 60;
 	var SUBMIT_DELAY_MS = 1500;
-	var TOAST_DURATION_MS = 5000;
 
 	/* ------------------------------------------------------------------ */
-	/* Mock analytics                                                       */
+	/* Analytics                                                          */
 	/* ------------------------------------------------------------------ */
 	function trackEvent(name, data) {
 		console.log('[Analytics]', name, data || {});
@@ -27,27 +26,6 @@
 				});
 			});
 		});
-	}
-
-	/* ------------------------------------------------------------------ */
-	/* Toast system                                                         */
-	/* ------------------------------------------------------------------ */
-	function showToast(message, type) {
-		var container = document.getElementById('toast-container');
-		if (!container) return;
-
-		var toast = document.createElement('div');
-		toast.className = 'toast toast--' + (type || 'success');
-		toast.setAttribute('role', 'alert');
-		toast.textContent = message;
-		container.appendChild(toast);
-
-		setTimeout(function () {
-			toast.classList.add('is-leaving');
-			toast.addEventListener('animationend', function () {
-				toast.remove();
-			});
-		}, TOAST_DURATION_MS);
 	}
 
 	/* ------------------------------------------------------------------ */
