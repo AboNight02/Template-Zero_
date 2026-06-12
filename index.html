@@ -4,126 +4,378 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+		content="ChairStudio AI — Design smarter workspaces with AI. Generate layout plans, optimize productivity, and visualize interiors in minutes. Trusted by 10,000+ teams.">
+	<meta name="keywords"
+		content="workspace design, interior design AI, office layout, productivity software, SaaS design tool">
+	<meta name="author" content="ChairStudio AI">
+	<meta name="theme-color" content="#3C3A47">
 
-	<title>HTML and CSS for Complete Beginners: Example 4-1 - Simple landing page</title>
+	<!-- Open Graph -->
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="ChairStudio AI — Design Smarter Workspaces with AI">
+	<meta property="og:description"
+		content="AI-powered workspace design platform. Reduce design time by 40% and ship better interiors faster. Start free today.">
+	<meta property="og:url" content="https://ahmedalmadhji.github.io/Template-Zero_/">
+	<meta property="og:site_name" content="ChairStudio AI">
+	<meta property="og:locale" content="en_US">
 
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<title>ChairStudio AI — Design Smarter Workspaces with AI</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700;900&display=swap"
-		rel="stylesheet" />
+		rel="stylesheet">
 
 	<link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-	<!-- Header section -->
-	<header id="main-header">
+	<a href="#main-content" class="skip-link">Skip to main content</a>
+
+	<!-- Toast container -->
+	<div class="toast-container" id="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+	<!-- Sticky CTA (desktop only) -->
+	<a href="#early-access" class="sticky-cta btn btn--primary" id="sticky-cta" data-track="sticky-cta">
+		Get Early Access
+	</a>
+
+	<!-- Navigation -->
+	<nav class="site-nav" id="site-nav" aria-label="Main navigation">
 		<div class="container">
-			<a href=""><img src="images/logo.svg" alt="logo for furniture company"></a>
-			<h1>Modern Chairs Crafted with Love</h1>
-			<h2>We love creating high quality and comfortable Chairs</h2>
-			<a href="#our-chairs" class="btn">Discover our chair selection</a>
+			<a href="#" class="site-nav__logo" aria-label="ChairStudio AI — Home">
+				<img src="images/logo.svg" alt="" width="40" height="40">
+				<span class="site-nav__brand">ChairStudio<span class="site-nav__brand-accent">AI</span></span>
+			</a>
+
+			<button class="site-nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu"
+				aria-label="Toggle navigation menu">
+				<span class="site-nav__toggle-bar"></span>
+				<span class="site-nav__toggle-bar"></span>
+				<span class="site-nav__toggle-bar"></span>
+			</button>
+
+			<ul class="site-nav__menu" id="nav-menu">
+				<li><a href="#features" class="nav-link" data-section="features">Features</a></li>
+				<li><a href="#social-proof" class="nav-link" data-section="social-proof">Customers</a></li>
+				<li><a href="#pricing" class="nav-link" data-section="pricing">Pricing</a></li>
+				<li><a href="#early-access" class="btn btn--primary btn--sm nav-cta" data-track="nav-cta">Get Early
+						Access</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- Hero -->
+	<header class="hero" id="main-header">
+		<div class="container">
+			<p class="badge">AI-Powered Workspace Design</p>
+			<h1 class="hero__title">Design smarter workspaces in minutes, not weeks</h1>
+			<p class="hero__subtitle">
+				ChairStudio AI helps teams plan, visualize, and optimize interiors with intelligent layout
+				suggestions — so you ship better spaces faster.
+			</p>
+
+			<div class="hero__actions">
+				<a href="#early-access" class="btn btn--primary btn--lg" data-track="hero-primary-cta">
+					Get Early Access — Free
+				</a>
+				<a href="#features" class="btn btn--secondary btn--lg" data-track="hero-secondary-cta">
+					See how it works
+				</a>
+			</div>
+
+			<div class="trust-bar" aria-label="Trust indicators">
+				<div class="trust-bar__item">
+					<strong>10,000+</strong>
+					<span>Active users</span>
+				</div>
+				<div class="trust-bar__divider" aria-hidden="true"></div>
+				<div class="trust-bar__item">
+					<strong>4.9/5</strong>
+					<span>Average rating</span>
+				</div>
+				<div class="trust-bar__divider" aria-hidden="true"></div>
+				<div class="trust-bar__item">
+					<strong>40%</strong>
+					<span>Faster design cycles</span>
+				</div>
+			</div>
 		</div>
 	</header>
 
-	<!-- The Main section -->
-	<main>
-		<section id="our-chairs">
+	<main id="main-content">
+		<!-- Features -->
+		<section id="features" class="section--surface" aria-labelledby="features-heading">
 			<div class="container">
-				<header>
-					<p class="section-intro">The selection</p>
-					<h3>Our Chairs</h3>
-					<p>
-						We mostly sell one-off items. That means that we make one-of-a-kind furniture
-						pieces so whoever buys it will have a unique item.
-					</p>
+				<header class="section-header">
+					<p class="section-intro">Platform capabilities</p>
+					<h2 id="features-heading">Everything you need to design better spaces</h2>
+					<p>From AI layout generation to team collaboration — one platform for modern workspace design.</p>
 				</header>
 
-				<div class="gallery">
-					<div>
-						<img src="images/furniture-1.jpg" alt="Furniture">
-						<p class="number">01</p>
-						<h4>Tufted white leather sofa chair</h4>
-						<p>
-							his will fit perfectly in any beauty salon or modern home thanks to its
-							timeless design.
-						</p>
-						<p>$289</p>
-					</div>
-					<div>
-						<img src="images/furniture-2.jpg" alt="Furniture">
-						<p class="number">02</p>
-						<h4>Black and brown wooden chair</h4>
-						<p>
-							Both minimalistic and comfortable, this is a great choice for home or office.
-						</p>
-						<p>$99</p>
-					</div>
-					<div>
-						<img src="images/furniture-3.jpg" alt="Furniture">
-						<p class="number">03</p>
-						<h4>Rustic wooden bar stool</h4>
-						<p>
-							Made from solid beech wood, this piece will fit nicely in your rustic kitchen.
-						</p>
-						<p>$139</p>
-					</div>
+				<div class="feature-grid">
+					<article class="feature-card">
+						<div class="feature-card__icon">
+							<img src="images/icon-ai.svg" alt="" width="48" height="48">
+						</div>
+						<h3 class="feature-card__title">AI Layout Assistant</h3>
+						<p>Generate optimized floor plans based on room dimensions, team size, and workflow patterns.</p>
+					</article>
+
+					<article class="feature-card">
+						<div class="feature-card__icon">
+							<img src="images/icon-layout.svg" alt="" width="48" height="48">
+						</div>
+						<h3 class="feature-card__title">Smart Space Planning</h3>
+						<p>Visualize furniture placement with real-time ergonomics scoring and traffic flow analysis.</p>
+					</article>
+
+					<article class="feature-card">
+						<div class="feature-card__icon">
+							<img src="images/icon-productivity.svg" alt="" width="48" height="48">
+						</div>
+						<h3 class="feature-card__title">Productivity Insights</h3>
+						<p>Measure workspace efficiency and get actionable recommendations to boost team output.</p>
+					</article>
+
+					<article class="feature-card">
+						<div class="feature-card__icon">
+							<img src="images/icon-collab.svg" alt="" width="48" height="48">
+						</div>
+						<h3 class="feature-card__title">Team Collaboration</h3>
+						<p>Share designs, collect feedback, and iterate together with live commenting and version history.</p>
+					</article>
+
+					<article class="feature-card">
+						<div class="feature-card__icon">
+							<img src="images/icon-analytics.svg" alt="" width="48" height="48">
+						</div>
+						<h3 class="feature-card__title">Design Analytics</h3>
+						<p>Track project timelines, cost estimates, and ROI metrics across all your workspace projects.</p>
+					</article>
 				</div>
-				<p>lnterested in our products? <a href="#contact">Send us a message</a> or <a href="#store">visit our
-						store.</a></p>
+
+				<p class="section-cta">
+					Ready to transform your workflow?
+					<a href="#early-access" data-track="features-cta">Join the waitlist</a>
+				</p>
 			</div>
 		</section>
-		<section id="contact" class="dark">
-			<div class="container small">
-				<header>
-					<p class="section-intro">Contact us</p>
-					<h3>Let's get in touch</h3>
+
+		<!-- Social Proof -->
+		<section id="social-proof" aria-labelledby="proof-heading">
+			<div class="container">
+				<header class="section-header">
+					<p class="section-intro">Trusted by modern teams</p>
+					<h2 id="proof-heading">Loved by designers, ops leaders, and startups</h2>
 				</header>
 
-				<form action="" method="post">
-					<div>
-						<label for="contact-name">Name</label>
-						<input type="text" name="contact-name" id="contact-name">
+				<!-- Logo row -->
+				<div class="logo-row" aria-label="Companies using ChairStudio AI">
+					<span class="logo-row__item">Acme Corp</span>
+					<span class="logo-row__item">Vertex Labs</span>
+					<span class="logo-row__item">Nimbus</span>
+					<span class="logo-row__item">Flowspace</span>
+					<span class="logo-row__item">Arc Studio</span>
+				</div>
+
+				<!-- Metrics -->
+				<div class="metrics-grid">
+					<div class="metric-card">
+						<p class="metric-card__value">40%</p>
+						<p class="metric-card__label">Reduced design time</p>
 					</div>
-					<div>
-						<label for="contact-email">Email address</label>
-						<input type="email" name="contact-email" id="contact-email">
+					<div class="metric-card">
+						<p class="metric-card__value">2.5×</p>
+						<p class="metric-card__label">Increased workspace efficiency</p>
 					</div>
-					<div>
-						<label for="contact-message">Message</label>
-						<textarea name="contact-message" id="contact-message" cols="30" rows="10"></textarea>
+					<div class="metric-card">
+						<p class="metric-card__value">98%</p>
+						<p class="metric-card__label">Client approval rate</p>
 					</div>
-					<div>
-						<button class="btn">Send Message</button>
-						<p class="muted"><em>All fields are required. We'll get back to you as soon as possible.</em>
-						</p>
+				</div>
+
+				<!-- Testimonials -->
+				<div class="testimonial-grid">
+					<blockquote class="testimonial-card">
+						<p class="testimonial-card__quote">"ChairStudio AI cut our office redesign from 6 weeks to 10
+							days. The AI suggestions were spot-on for our hybrid team."</p>
+						<footer class="testimonial-card__author">
+							<div class="testimonial-card__avatar" aria-hidden="true">SM</div>
+							<div>
+								<cite class="testimonial-card__name">Sarah Mitchell</cite>
+								<p class="testimonial-card__role">Head of Operations, Vertex Labs</p>
+							</div>
+						</footer>
+					</blockquote>
+
+					<blockquote class="testimonial-card">
+						<p class="testimonial-card__quote">"We increased workspace efficiency by 2.5× after implementing
+							ChairStudio's layout recommendations. Game changer for our startup."</p>
+						<footer class="testimonial-card__author">
+							<div class="testimonial-card__avatar" aria-hidden="true">JR</div>
+							<div>
+								<cite class="testimonial-card__name">James Rodriguez</cite>
+								<p class="testimonial-card__role">Co-founder, Flowspace</p>
+							</div>
+						</footer>
+					</blockquote>
+
+					<blockquote class="testimonial-card">
+						<p class="testimonial-card__quote">"The collaboration features alone saved us countless hours.
+							Our clients love the interactive previews we share."</p>
+						<footer class="testimonial-card__author">
+							<div class="testimonial-card__avatar" aria-hidden="true">LK</div>
+							<div>
+								<cite class="testimonial-card__name">Lisa Kim</cite>
+								<p class="testimonial-card__role">Interior Designer, Arc Studio</p>
+							</div>
+						</footer>
+					</blockquote>
+				</div>
+			</div>
+		</section>
+
+		<!-- Pricing -->
+		<section id="pricing" class="section--surface" aria-labelledby="pricing-heading">
+			<div class="container">
+				<header class="section-header">
+					<p class="section-intro">Simple, transparent pricing</p>
+					<h2 id="pricing-heading">Start free. Scale as you grow.</h2>
+					<p>No hidden fees. Cancel anytime. All plans include a 14-day Pro trial.</p>
+				</header>
+
+				<div class="pricing-grid">
+					<article class="pricing-card">
+						<h3 class="pricing-card__name">Free</h3>
+						<p class="pricing-card__price"><span class="pricing-card__amount">$0</span><span
+								class="pricing-card__period">/mo</span></p>
+						<p class="pricing-card__desc">For individuals exploring workspace design.</p>
+						<ul class="pricing-card__features">
+							<li>3 projects</li>
+							<li>Basic AI layouts</li>
+							<li>1 team member</li>
+							<li>Export to PDF</li>
+						</ul>
+						<a href="#early-access" class="btn btn--secondary btn--block" data-track="pricing-free">Get
+							Started</a>
+					</article>
+
+					<article class="pricing-card pricing-card--featured">
+						<p class="pricing-card__badge">Most Popular</p>
+						<h3 class="pricing-card__name">Pro</h3>
+						<p class="pricing-card__price"><span class="pricing-card__amount">$29</span><span
+								class="pricing-card__period">/mo</span></p>
+						<p class="pricing-card__desc">For growing teams that need more power.</p>
+						<ul class="pricing-card__features">
+							<li>Unlimited projects</li>
+							<li>Advanced AI assistant</li>
+							<li>Up to 10 team members</li>
+							<li>Productivity analytics</li>
+							<li>Priority support</li>
+						</ul>
+						<a href="#early-access" class="btn btn--primary btn--block" data-track="pricing-pro">Start Free
+							Trial</a>
+					</article>
+
+					<article class="pricing-card">
+						<h3 class="pricing-card__name">Business</h3>
+						<p class="pricing-card__price"><span class="pricing-card__amount">$79</span><span
+								class="pricing-card__period">/mo</span></p>
+						<p class="pricing-card__desc">For organizations with advanced needs.</p>
+						<ul class="pricing-card__features">
+							<li>Everything in Pro</li>
+							<li>Unlimited team members</li>
+							<li>Custom integrations</li>
+							<li>SSO &amp; admin controls</li>
+							<li>Dedicated account manager</li>
+						</ul>
+						<a href="#early-access" class="btn btn--secondary btn--block" data-track="pricing-business">Contact
+							Sales</a>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<!-- Early Access / Lead Gen -->
+		<section id="early-access" class="dark" aria-labelledby="access-heading">
+			<div class="container container--narrow">
+				<header class="section-header">
+					<p class="section-intro">Limited early access</p>
+					<h2 id="access-heading">Request early access</h2>
+					<p>Join 10,000+ professionals on the waitlist. Be first to design smarter workspaces with AI.</p>
+				</header>
+
+				<form id="early-access-form" class="lead-form" action="#" method="post" novalidate>
+					<div class="form-group">
+						<label for="lead-name">Full name</label>
+						<input type="text" name="lead-name" id="lead-name" required autocomplete="name"
+							placeholder="Jane Smith">
+						<span class="form-error" role="alert"></span>
+					</div>
+
+					<div class="form-group">
+						<label for="lead-email">Work email</label>
+						<input type="email" name="lead-email" id="lead-email" required autocomplete="email"
+							placeholder="jane@company.com">
+						<span class="form-error" role="alert"></span>
+					</div>
+
+					<div class="form-group">
+						<label for="lead-company">Company <span class="label-optional">(optional)</span></label>
+						<input type="text" name="lead-company" id="lead-company" autocomplete="organization"
+							placeholder="Your company name">
+					</div>
+
+					<div class="form-submit">
+						<button type="submit" class="btn btn--primary btn--lg btn--block" id="submit-btn"
+							data-track="form-submit">
+							<span class="btn__text">Request Early Access</span>
+							<span class="btn__loader" aria-hidden="true"></span>
+						</button>
+						<p class="muted"><em>No credit card required. We'll notify you when your spot is ready.</em></p>
 					</div>
 				</form>
 			</div>
 		</section>
-
-		<section id="store">
-			<div class="container">
-				<p class="section-intro">Visit our store</p>
-				<h3 class="large">(307)555-0133</h3>
-				<p class="large">2972 Westheimer Rd.Santa Ana, Illinois 85486.</p>
-
-				<ul class="social-icons">
-					<li><a href=""><img src="images/icon-twitter.svg" alt="Twitter"></a></li>
-					<li><a href=""><img src="images/icon-facebook.svg" alt="Facebook"></a></li>
-					<li><a href=""><img src="images/icon-instagram.svg" alt="Instagram"></a></li>
-				</ul>
-			</div>
-		</section>
 	</main>
 
-	<!-- Footer section -->
-	<footer>
-		<div class="container small">
-			<p>&copy; Copyright 2024 The Chair Company. Al rights reserved. Built with <a
-					href="https://github.com/AboNight02">Ahmed Raed</a></p>
+	<footer class="site-footer">
+		<div class="container">
+			<div class="site-footer__top">
+				<div class="site-footer__brand">
+					<img src="images/logo.svg" alt="" width="32" height="32">
+					<span>ChairStudio<span class="site-nav__brand-accent">AI</span></span>
+				</div>
+				<ul class="social-icons" aria-label="Social media links">
+					<li>
+						<a href="https://twitter.com/chairstudioai" target="_blank" rel="noopener noreferrer"
+							aria-label="Follow us on Twitter">
+							<img src="images/icon-twitter.svg" alt="" width="20" height="20">
+						</a>
+					</li>
+					<li>
+						<a href="https://facebook.com/chairstudioai" target="_blank" rel="noopener noreferrer"
+							aria-label="Follow us on Facebook">
+							<img src="images/icon-facebook.svg" alt="" width="20" height="20">
+						</a>
+					</li>
+					<li>
+						<a href="https://instagram.com/chairstudioai" target="_blank" rel="noopener noreferrer"
+							aria-label="Follow us on Instagram">
+							<img src="images/icon-instagram.svg" alt="" width="20" height="20">
+						</a>
+					</li>
+				</ul>
+			</div>
+			<p class="site-footer__copy">&copy; 2024 ChairStudio AI. All rights reserved. Built by
+				<a href="https://github.com/AhmedAlMadhji" target="_blank" rel="noopener noreferrer">Ahmed Raed</a>
+			</p>
 		</div>
 	</footer>
+
+	<script src="js/main.js" defer></script>
 </body>
 
 </html>

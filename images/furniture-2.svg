@@ -1,0 +1,18 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title2">
+  <title id="title2">Black and brown wooden chair</title>
+  <rect width="800" height="600" fill="#EFF0EA"/>
+  <rect x="80" y="420" width="640" height="12" rx="6" fill="#D4D5CE"/>
+  <!-- Chair back -->
+  <rect x="280" y="140" width="240" height="260" rx="8" fill="#3C3A47"/>
+  <!-- Seat -->
+  <rect x="260" y="380" width="280" height="24" rx="4" fill="#9F7657"/>
+  <!-- Front legs -->
+  <rect x="270" y="404" width="14" height="100" rx="3" fill="#3C3A47"/>
+  <rect x="516" y="404" width="14" height="100" rx="3" fill="#3C3A47"/>
+  <!-- Back legs -->
+  <rect x="300" y="404" width="12" height="90" rx="3" fill="#2A2833"/>
+  <rect x="488" y="404" width="12" height="90" rx="3" fill="#2A2833"/>
+  <!-- Armrests -->
+  <rect x="250" y="340" width="20" height="80" rx="6" fill="#9F7657"/>
+  <rect x="530" y="340" width="20" height="80" rx="6" fill="#9F7657"/>
+</svg>

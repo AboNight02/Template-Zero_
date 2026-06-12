@@ -1,0 +1,15 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title3">
+  <title id="title3">Rustic wooden bar stool</title>
+  <rect width="800" height="600" fill="#EFF0EA"/>
+  <rect x="80" y="420" width="640" height="12" rx="6" fill="#D4D5CE"/>
+  <!-- Seat -->
+  <ellipse cx="400" cy="360" rx="120" ry="20" fill="#9F7657"/>
+  <ellipse cx="400" cy="355" rx="110" ry="16" fill="#B8896A"/>
+  <!-- Legs -->
+  <rect x="320" y="370" width="12" height="130" rx="4" fill="#7A5C3E" transform="rotate(-8 326 435)"/>
+  <rect x="468" y="370" width="12" height="130" rx="4" fill="#7A5C3E" transform="rotate(8 474 435)"/>
+  <rect x="350" y="370" width="12" height="130" rx="4" fill="#6B5035" transform="rotate(-20 356 435)"/>
+  <rect x="438" y="370" width="12" height="130" rx="4" fill="#6B5035" transform="rotate(20 444 435)"/>
+  <!-- Cross brace -->
+  <rect x="340" y="460" width="120" height="8" rx="4" fill="#7A5C3E" transform="rotate(-5 400 464)"/>
+</svg>

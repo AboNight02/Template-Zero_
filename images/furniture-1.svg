@@ -1,0 +1,21 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title1">
+  <title id="title1">Tufted white leather sofa chair</title>
+  <rect width="800" height="600" fill="#EFF0EA"/>
+  <rect x="80" y="420" width="640" height="12" rx="6" fill="#D4D5CE"/>
+  <!-- Chair back -->
+  <rect x="220" y="120" width="360" height="280" rx="24" fill="#F5F3EF" stroke="#E0DDD6" stroke-width="2"/>
+  <!-- Tufted buttons -->
+  <circle cx="310" cy="200" r="8" fill="#E8E4DC"/>
+  <circle cx="400" cy="200" r="8" fill="#E8E4DC"/>
+  <circle cx="490" cy="200" r="8" fill="#E8E4DC"/>
+  <circle cx="310" cy="280" r="8" fill="#E8E4DC"/>
+  <circle cx="400" cy="280" r="8" fill="#E8E4DC"/>
+  <circle cx="490" cy="280" r="8" fill="#E8E4DC"/>
+  <!-- Seat -->
+  <rect x="200" y="380" width="400" height="60" rx="12" fill="#F5F3EF" stroke="#E0DDD6" stroke-width="2"/>
+  <!-- Legs -->
+  <rect x="230" y="440" width="16" height="80" rx="4" fill="#9F7657"/>
+  <rect x="554" y="440" width="16" height="80" rx="4" fill="#9F7657"/>
+  <rect x="280" y="440" width="16" height="60" rx="4" fill="#9F7657"/>
+  <rect x="504" y="440" width="16" height="60" rx="4" fill="#9F7657"/>
+</svg>

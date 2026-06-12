@@ -1,0 +1,209 @@
+/* ==========================================================================
+   Base — Reset, Design Tokens, Typography
+   ========================================================================== */
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+:root {
+	/* Colors */
+	--color-primary: rgb(60, 58, 71);
+	--color-primary-rgb: 60, 58, 71;
+	--color-accent: rgb(159, 118, 87);
+	--color-accent-rgb: 159, 118, 87;
+	--color-surface: #eff0ea;
+	--color-surface-elevated: #ffffff;
+	--color-white: #ffffff;
+	--color-text-muted: rgba(var(--color-primary-rgb), 0.8);
+	--color-text-subtle: rgba(var(--color-primary-rgb), 0.5);
+	--color-overlay: rgba(255, 255, 255, 0.1);
+	--color-overlay-hover: rgba(255, 255, 255, 0.2);
+	--color-border-light: rgba(255, 255, 255, 0.8);
+	--color-muted: rgba(255, 255, 255, 0.5);
+
+	/* Spacing scale (8px base) */
+	--space-1: 0.5rem;   /* 8px  */
+	--space-2: 1rem;     /* 16px */
+	--space-3: 1.5rem;   /* 24px */
+	--space-4: 2rem;     /* 32px */
+	--space-5: 2.5rem;   /* 40px */
+	--space-6: 3.5rem;   /* 56px */
+	--space-7: 5rem;     /* 80px */
+	--space-8: 7rem;     /* 112px */
+	--space-9: 13rem;    /* 208px */
+
+	/* Layout */
+	--container-width: 85%;
+	--container-narrow: 60%;
+	--container-max-narrow: 35rem;
+	--radius: 8px;
+	--radius-lg: 12px;
+	--shadow-sm: 0 1px 3px rgba(var(--color-primary-rgb), 0.08);
+	--shadow-md: 0 4px 16px rgba(var(--color-primary-rgb), 0.1);
+	--shadow-lg: 0 8px 32px rgba(var(--color-primary-rgb), 0.12);
+
+	/* Motion */
+	--transition-fast: 150ms ease;
+	--transition-base: 250ms ease;
+	--transition-slow: 400ms ease;
+
+	/* Typography */
+	--font-family: 'Poppins', sans-serif;
+	--font-size-base: 18px;
+	--line-height: 1.55;
+}
+
+html {
+	font-size: var(--font-size-base);
+	scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+	}
+}
+
+body {
+	font-family: var(--font-family);
+	line-height: var(--line-height);
+	color: var(--color-primary);
+	background-color: var(--color-white);
+}
+
+/* Scrollbar (WebKit) */
+::-webkit-scrollbar {
+	width: 0.6rem;
+}
+
+::-webkit-scrollbar-track {
+	background: #1f1f1f;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #4f4f4f;
+	border: 3px solid transparent;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+/* Typography */
+h1 {
+	font-size: 3.15rem;
+	font-weight: 700;
+	letter-spacing: -2px;
+	line-height: 1.1;
+}
+
+h2 {
+	font-size: 1.75rem;
+	font-weight: 300;
+	letter-spacing: -1px;
+	color: var(--color-text-muted);
+}
+
+h3 {
+	font-size: 1.25rem;
+	font-weight: 700;
+	letter-spacing: -0.5px;
+	margin-bottom: var(--space-2);
+}
+
+h2.large,
+h3.large {
+	font-size: 3.15rem;
+	font-weight: 200;
+	letter-spacing: -1px;
+}
+
+h4 {
+	font-size: 1rem;
+	font-weight: 700;
+	margin-bottom: var(--space-3);
+}
+
+p.section-intro {
+	font-weight: 200;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+p.number {
+	font-size: 2.4rem;
+	font-weight: 200;
+	color: var(--color-text-subtle);
+}
+
+p.large {
+	font-size: 1.75rem;
+	font-weight: 200;
+	letter-spacing: -1px;
+}
+
+a {
+	font-weight: 700;
+	text-decoration: none;
+	color: var(--color-accent);
+	transition: color var(--transition-fast);
+}
+
+a:hover {
+	color: var(--color-primary);
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+	outline: 2px solid var(--color-accent);
+	outline-offset: 3px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+.skip-link {
+	position: absolute;
+	top: -100%;
+	left: var(--space-2);
+	z-index: 1000;
+	padding: var(--space-2) var(--space-3);
+	background: var(--color-primary);
+	color: var(--color-white);
+	border-radius: var(--radius);
+}
+
+.skip-link:focus {
+	top: var(--space-2);
+}
